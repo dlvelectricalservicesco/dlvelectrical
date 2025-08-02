@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DLV Electrical Services Co. - Company Profile</title>
+    <meta name="description" content="DLV Electrical Services Co. is your trusted partner in residential, commercial, and industrial electrical solutions. We offer professional installation, maintenance, and repair services.">
+    <meta name="keywords" content="electrical services, electrician, commercial wiring, residential installation, preventive maintenance, exothermic welding, electrical repair">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 23, 71, 0.7), rgba(0, 23, 71, 0.7)), url('https://placehold.co/1920x1080/001747/FFFFFF?text=Electrical+Services');
+            background-size: cover;
+            background-position: center;
+        }
+        .section-title {
+            @apply text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center;
+        }
+        .section-subtitle {
+            @apply text-center text-gray-500 max-w-2xl mx-auto mb-12;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header & Navigation Bar -->
+    <header id="header" class="bg-white shadow-md fixed w-full z-50 top-0">
+        <nav class="container mx-auto px-6 py-2 flex justify-between items-center">
+            <a href="#home" class="flex items-center">
+                <img src="https://i.imgur.com/wl19aBm.png" alt="DLV Electrical Services Co. Logo" class="h-14">
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#home" class="text-gray-600 hover:text-blue-600 transition duration-300">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition duration-300">About Us</a>
+                <a href="#services" class="text-gray-600 hover:text-blue-600 transition duration-300">Services</a>
+                <a href="#portfolio" class="text-gray-600 hover:text-blue-600 transition duration-300">Portfolio</a>
+                <!-- Add the link to your PDF file in the href attribute below -->
+                <a href="#" download="DLV-Company-Profile.pdf" class="text-gray-600 hover:text-blue-600 transition duration-300">Download</a>
+                <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition duration-300">Contact Us</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <a href="#home" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Home</a>
+            <a href="#about" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">About Us</a>
+            <a href="#services" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Services</a>
+            <a href="#portfolio" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Portfolio</a>
+             <!-- Add the link to your PDF file in the href attribute below -->
+            <a href="#" download="DLV-Company-Profile.pdf" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Download</a>
+            <a href="#contact" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-bg h-screen flex items-center justify-center text-white text-center pt-16">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">DLV Electrical Services Co.</h1>
+                <p class="text-lg md:text-2xl font-light mb-8">Your Trusted Partner in Electrical Solutions</p>
+                <a href="#about" class="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300 transform hover:scale-105">Learn More</a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">About Our Company</h2>
+                <p class="section-subtitle">Delivering excellence and safety in every connection we make.</p>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="https://placehold.co/600x400/E0E7FF/3730A3?text=Our+Team" alt="DLV Electrical Team" class="rounded-lg shadow-xl w-full">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Our Story</h3>
+                        <p class="text-gray-600 mb-4">D.L. Verano’s Electrical Supply and Services was founded in October 1985 by Engr. Dante L. Verano to provide electrical supplies, train aspiring electricians, and help address unemployment. Starting as a small retail shop, it grew into contracting, focusing on quality and affordable services, completing over 12,000 residential units and numerous commercial/industrial projects. In 2022, Dante passed the business to his sons, Dante Leonardo Verano and Dan Christian Cortez, who rebranded it in 2023 as DLV Electrical Services Co. They expanded services to include energy-efficient lighting, modern installations, and automation, positioning the company as an industry leader. Today, DLV continues to thrive, embracing technology and sustainability while maintaining its founding values of quality, integrity, and customer satisfaction.</p>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Mission & Vision</h3>
+                        <p class="text-gray-600 mb-4"><strong>Mission:</strong> To provide high-quality, reliable, and efficient electrical services to our clients, ensuring their safety and satisfaction while adhering to the highest industry standards and best practices.</p>
+                        <p class="text-gray-600 mb-6"><strong>Vision:</strong> To be the leading electrical services company known for our expertise, innovation, and commitment to excellence, while contributing to the development of sustainable and energy-efficient solutions for our clients and the community.</p>
+                        <div class="flex space-x-4">
+                            <div class="text-center">
+                                <i class="fas fa-award text-blue-600 text-3xl mb-2"></i>
+                                <p class="font-semibold">Licensed</p>
+                            </div>
+                            <div class="text-center">
+                                <i class="fas fa-certificate text-blue-600 text-3xl mb-2"></i>
+                                <p class="font-semibold">Certified</p>
+                            </div>
+                             <div class="text-center">
+                                <i class="fas fa-shield-alt text-blue-600 text-3xl mb-2"></i>
+                                <p class="font-semibold">Insured</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">We offer a comprehensive range of electrical services tailored to meet the needs of our residential, commercial, and industrial clients.</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-blue-100 text-blue-600 w-20 h-20 rounded-full mx-auto flex items-center justify-center mb-6">
+                            <i class="fas fa-home text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Residential Installations</h3>
+                        <p class="text-gray-600">Complete wiring, lighting, panel upgrades, and smart home setups for your home.</p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-blue-100 text-blue-600 w-20 h-20 rounded-full mx-auto flex items-center justify-center mb-6">
+                            <i class="fas fa-building text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Commercial & Industrial</h3>
+                        <p class="text-gray-600">Expert wiring, machinery hookups, and large-scale electrical systems for businesses.</p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-blue-100 text-blue-600 w-20 h-20 rounded-full mx-auto flex items-center justify-center mb-6">
+                            <i class="fas fa-wrench text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Troubleshooting & Repairs</h3>
+                        <p class="text-gray-600">Fast and efficient diagnosis and repair of all electrical issues, 24/7 emergency service.</p>
+                    </div>
+                    <!-- Service Card 4 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-blue-100 text-blue-600 w-20 h-20 rounded-full mx-auto flex items-center justify-center mb-6">
+                            <i class="fas fa-tasks text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Preventive Maintenance</h3>
+                        <p class="text-gray-600">Scheduled inspections and maintenance to prevent downtime and ensure safety.</p>
+                    </div>
+                    <!-- Service Card 5 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-blue-100 text-blue-600 w-20 h-20 rounded-full mx-auto flex items-center justify-center mb-6">
+                            <i class="fas fa-fire-alt text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Exothermic Welding</h3>
+                        <p class="text-gray-600">Specialized welding for high-quality, permanent electrical connections.</p>
+                    </div>
+                    <!-- Service Card 6 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-blue-100 text-blue-600 w-20 h-20 rounded-full mx-auto flex items-center justify-center mb-6">
+                            <i class="fas fa-cogs text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Specialized Works</h3>
+                        <p class="text-gray-600">Custom electrical solutions for unique industrial and commercial needs.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                     <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300">Request a Service</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Our Projects</h2>
+                <p class="section-subtitle">A glimpse into the quality and diversity of our work. We take pride in every project we complete.</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://i.imgur.com/7kik24N.png" alt="Commercial Office Fit-out" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            <div>
+                                <h3 class="text-white text-xl font-bold">Commercial Office Fit-out</h3>
+                                <p class="text-gray-300">Complete electrical installation for modern office spaces.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://i.imgur.com/LMgtGOX.png" alt="Industrial Panel Installation" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            <div>
+                                <h3 class="text-white text-xl font-bold">Industrial Panel Installation</h3>
+                                <p class="text-gray-300">Heavy-duty panel boards and lightning arresters.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://i.imgur.com/l1CHxCF.png" alt="Cable Tray and Wiring" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            <div>
+                                <h3 class="text-white text-xl font-bold">Cable Management Systems</h3>
+                                <p class="text-gray-300">Neat and organized cable trays and wiring for complex systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://i.imgur.com/omivlwQ.png" alt="Circuit Breaker Panels" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            <div>
+                                <h3 class="text-white text-xl font-bold">Circuit Breaker Panels</h3>
+                                <p class="text-gray-300">Precision assembly of main distribution and circuit breaker panels.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://i.imgur.com/pIYNZA7.png" alt="Busbar and Riser Systems" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            <div>
+                                <h3 class="text-white text-xl font-bold">High-Capacity Busbar Systems</h3>
+                                <p class="text-gray-300">Installation of high-current busbars and electrical risers.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://i.imgur.com/3URhddw.png" alt="Metering and Rooftop Installations" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            <div>
+                                <h3 class="text-white text-xl font-bold">Metering & Rooftop Units</h3>
+                                <p class="text-gray-300">Bank metering solutions and rooftop HVAC electrical hookups.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">We are proud to have earned the trust of our clients. Here's what they have to say about our work.</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <img src="https://placehold.co/50x50/E0E7FF/3730A3?text=A" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-bold">John Doe</h4>
+                                <p class="text-sm text-gray-500">CEO, Innovate Inc.</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">"DLV Electrical provided outstanding service for our new office. Professional, timely, and highly skilled. Highly recommended."</p>
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <img src="https://placehold.co/50x50/E0E7FF/3730A3?text=B" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-bold">Jane Smith</h4>
+                                <p class="text-sm text-gray-500">Homeowner</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">"The team was fantastic. They fixed a complex issue in my home quickly and explained everything clearly. I felt very safe."</p>
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <img src="https://placehold.co/50x50/E0E7FF/3730A3?text=C" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-bold">Mike Williams</h4>
+                                <p class="text-sm text-gray-500">Facility Manager, BuildCo</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Their preventive maintenance program is top-notch. DLV has saved us from costly downtime on multiple occasions."</p>
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have a project in mind or need a quote? We're here to help. Contact us today!</p>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- Contact Form -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-inner">
+                        <form id="contact-form">
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                             <div class="mb-4">
+                                <label for="phone" class="block text-gray-700 font-bold mb-2">Phone</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="subject" class="block text-gray-700 font-bold mb-2">Subject</label>
+                                <input type="text" id="subject" name="subject" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+                                <textarea id="message" name="message" rows="5" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                            </div>
+                            <div class="mb-4">
+                                <label for="attachment" class="block text-gray-700 font-bold mb-2">Attach File (Optional)</label>
+                                <input type="file" id="attachment" name="attachment" class="w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100">
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">Send Message</button>
+                        </form>
+                        <div id="form-status" class="mt-4 text-center"></div>
+                    </div>
+                    <!-- Contact Info & Map -->
+                    <div>
+                        <div class="mb-8">
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">Contact Details</h3>
+                            <div class="flex items-start mb-4 text-gray-600">
+                                <i class="fas fa-map-marker-alt w-6 text-blue-600 pt-1"></i>
+                                <span class="ml-4">L32 B32 ST JOHN ST. PH 5 STA MARIA SUBD. BANABA, SAN MATEO, RIZAL 1850</span>
+                            </div>
+                            <div class="flex items-center mb-4 text-gray-600">
+                                <i class="fas fa-phone w-6 text-blue-600"></i>
+                                <span class="ml-4">0919-9136985</span>
+                            </div>
+                            <div class="flex items-center mb-4 text-gray-600">
+                                <i class="fas fa-tty w-6 text-blue-600"></i>
+                                <span class="ml-4">(02) 8810 4406</span>
+                            </div>
+                            <div class="flex items-center mb-4 text-gray-600">
+                                <i class="fas fa-envelope w-6 text-blue-600"></i>
+                                <span class="ml-4">dl_verano@yahoo.com</span>
+                            </div>
+                        </div>
+                        <div>
+                             <h3 class="text-xl font-bold text-gray-800 mb-4">Our Location</h3>
+                             <div class="rounded-lg shadow-lg overflow-hidden">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1929.655849842799!2d121.11475945806886!3d14.69485799484801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b9f3a8a3f859%3A0x53d249f3938a38a9!2sSta.%20Maria%20Subdivision!5e0!3m2!1sen!2sph!4v1722620000000!5m2!1sen!2sph" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">DLV Electrical Services</h3>
+                    <p class="text-blue-200">Your trusted partner for all electrical needs. Committed to safety, quality, and reliability.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul>
+                        <li class="mb-2"><a href="#about" class="text-blue-200 hover:text-white">About Us</a></li>
+                        <li class="mb-2"><a href="#services" class="text-blue-200 hover:text-white">Services</a></li>
+                        <li class="mb-2"><a href="#portfolio" class="text-blue-200 hover:text-white">Portfolio</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-blue-200 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-blue-200 hover:text-white text-2xl"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-blue-200 hover:text-white text-2xl"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-blue-200 hover:text-white text-2xl"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-8 pt-8 text-center text-blue-300">
+                <p>&copy; 2024 DLV Electrical Services Co. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Contact form submission
+        const contactForm = document.getElementById('contact-form');
+        const formStatus = document.getElementById('form-status');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            formStatus.innerHTML = '<p class="text-blue-600">Sending your message...</p>';
+            
+            // Simulate form submission
+            setTimeout(() => {
+                formStatus.innerHTML = '<p class="text-green-600 font-semibold">Thank you! Your message has been sent successfully.</p>';
+                contactForm.reset();
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
