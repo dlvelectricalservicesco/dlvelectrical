@@ -10,17 +10,17 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts: Inter -->
+    <!-- Google Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
         .hero-bg {
             background-image: linear-gradient(rgba(0, 23, 71, 0.7), rgba(0, 23, 71, 0.7)), url('https://placehold.co/1920x1080/001747/FFFFFF?text=Electrical+Services');
@@ -32,6 +32,13 @@
         }
         .section-subtitle {
             @apply text-center text-gray-500 max-w-2xl mx-auto mb-12;
+        }
+        /* Modal Styles */
+        .modal {
+            transition: opacity 0.3s ease;
+        }
+        body.modal-open {
+            overflow: hidden;
         }
     </style>
 </head>
@@ -179,58 +186,40 @@
                 <h2 class="section-title">Our Projects</h2>
                 <p class="section-subtitle">A glimpse into the quality and diversity of our work. We take pride in every project we complete.</p>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer" onclick="openModal('https://i.imgur.com/7kik24N.png', 'Commercial Office Fit-out', 'Complete electrical installation for modern office spaces.')">
                         <img src="https://i.imgur.com/7kik24N.png" alt="Commercial Office Fit-out" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                            <div>
-                                <h3 class="text-white text-xl font-bold">Commercial Office Fit-out</h3>
-                                <p class="text-gray-300">Complete electrical installation for modern office spaces.</p>
-                            </div>
+                        <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            <i class="fas fa-search-plus text-white text-4xl"></i>
                         </div>
                     </div>
-                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer" onclick="openModal('https://i.imgur.com/LMgtGOX.png', 'Industrial Panel Installation', 'Heavy-duty panel boards and lightning arresters.')">
                         <img src="https://i.imgur.com/LMgtGOX.png" alt="Industrial Panel Installation" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                            <div>
-                                <h3 class="text-white text-xl font-bold">Industrial Panel Installation</h3>
-                                <p class="text-gray-300">Heavy-duty panel boards and lightning arresters.</p>
-                            </div>
+                        <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            <i class="fas fa-search-plus text-white text-4xl"></i>
                         </div>
                     </div>
-                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer" onclick="openModal('https://i.imgur.com/l1CHxCF.png', 'Cable Management Systems', 'Neat and organized cable trays and wiring for complex systems.')">
                         <img src="https://i.imgur.com/l1CHxCF.png" alt="Cable Tray and Wiring" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                            <div>
-                                <h3 class="text-white text-xl font-bold">Cable Management Systems</h3>
-                                <p class="text-gray-300">Neat and organized cable trays and wiring for complex systems.</p>
-                            </div>
+                        <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            <i class="fas fa-search-plus text-white text-4xl"></i>
                         </div>
                     </div>
-                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer" onclick="openModal('https://i.imgur.com/omivlwQ.png', 'Circuit Breaker Panels', 'Precision assembly of main distribution and circuit breaker panels.')">
                         <img src="https://i.imgur.com/omivlwQ.png" alt="Circuit Breaker Panels" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                            <div>
-                                <h3 class="text-white text-xl font-bold">Circuit Breaker Panels</h3>
-                                <p class="text-gray-300">Precision assembly of main distribution and circuit breaker panels.</p>
-                            </div>
+                        <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                           <i class="fas fa-search-plus text-white text-4xl"></i>
                         </div>
                     </div>
-                     <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                     <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer" onclick="openModal('https://i.imgur.com/pIYNZA7.png', 'High-Capacity Busbar Systems', 'Installation of high-current busbars and electrical risers.')">
                         <img src="https://i.imgur.com/pIYNZA7.png" alt="Busbar and Riser Systems" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                            <div>
-                                <h3 class="text-white text-xl font-bold">High-Capacity Busbar Systems</h3>
-                                <p class="text-gray-300">Installation of high-current busbars and electrical risers.</p>
-                            </div>
+                        <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                           <i class="fas fa-search-plus text-white text-4xl"></i>
                         </div>
                     </div>
-                     <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                     <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer" onclick="openModal('https://i.imgur.com/3URhddw.png', 'Metering & Rooftop Units', 'Bank metering solutions and rooftop HVAC electrical hookups.')">
                         <img src="https://i.imgur.com/3URhddw.png" alt="Metering and Rooftop Installations" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                            <div>
-                                <h3 class="text-white text-xl font-bold">Metering & Rooftop Units</h3>
-                                <p class="text-gray-300">Bank metering solutions and rooftop HVAC electrical hookups.</p>
-                            </div>
+                        <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                           <i class="fas fa-search-plus text-white text-4xl"></i>
                         </div>
                     </div>
                 </div>
@@ -388,8 +377,24 @@
         </div>
     </footer>
 
+    <!-- Portfolio Modal -->
+    <div id="portfolio-modal" class="modal fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center p-4 z-[100] hidden" onclick="closeModal()">
+        <div class="bg-white rounded-lg shadow-2xl max-w-4xl w-full relative transform transition-transform duration-300 scale-95" onclick="event.stopPropagation()">
+            <button onclick="closeModal()" class="absolute -top-3 -right-3 bg-white rounded-full h-10 w-10 text-gray-800 text-2xl flex items-center justify-center shadow-lg hover:bg-gray-200 z-10">&times;</button>
+            <div class="md:flex">
+                <div class="md:w-2/3">
+                    <img id="modal-img" src="" alt="Portfolio Project" class="w-full h-auto max-h-[85vh] object-contain rounded-l-lg">
+                </div>
+                <div class="p-6 md:w-1/3 bg-gray-50 flex flex-col justify-center rounded-r-lg">
+                    <h3 id="modal-title" class="text-2xl font-bold text-gray-800"></h3>
+                    <p id="modal-description" class="mt-2 text-gray-600"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
-        // Mobile menu toggle
+        // --- Mobile menu toggle ---
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
         mobileMenuButton.addEventListener('click', () => {
@@ -403,7 +408,7 @@
             });
         });
 
-        // Contact form submission
+        // --- Contact form submission ---
         const contactForm = document.getElementById('contact-form');
         const formStatus = document.getElementById('form-status');
         contactForm.addEventListener('submit', function(e) {
@@ -415,6 +420,41 @@
                 formStatus.innerHTML = '<p class="text-green-600 font-semibold">Thank you! Your message has been sent successfully.</p>';
                 contactForm.reset();
             }, 2000);
+        });
+
+        // --- Portfolio Modal Logic ---
+        const modal = document.getElementById('portfolio-modal');
+        const modalImg = document.getElementById('modal-img');
+        const modalTitle = document.getElementById('modal-title');
+        const modalDescription = document.getElementById('modal-description');
+        const body = document.body;
+
+        function openModal(imgSrc, title, description) {
+            modalImg.src = imgSrc;
+            modalTitle.textContent = title;
+            modalDescription.textContent = description;
+            modal.classList.remove('hidden');
+            body.classList.add('modal-open');
+            // Animate modal entrance
+            setTimeout(() => {
+                modal.querySelector('div[onclick="event.stopPropagation()"]').classList.remove('scale-95');
+                modal.querySelector('div[onclick="event.stopPropagation()"]').classList.add('scale-100');
+            }, 50);
+        }
+
+        function closeModal() {
+            modal.querySelector('div[onclick="event.stopPropagation()"]').classList.add('scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                body.classList.remove('modal-open');
+            }, 200);
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+                closeModal();
+            }
         });
     </script>
 </body>
